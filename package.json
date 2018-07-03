@@ -1,0 +1,61 @@
+{
+  "name": "mongo_test",
+  "version": "1.0.0",
+  "description": "Good reindexstaurant around Stevens campus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "babel-node index.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "dev": "NODE_ENV=development nodemon dist/index.bundel.js",
+    "build": "webpack --config webpack.prod.js",
+    "dev:build": "webpack -w"
+  },
+  "keywords": [
+    "nodeJs",
+    "test",
+    "dev-server",
+    "webpack"
+  ],
+  "author": "Yada",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "clean-webpack-plugin": "^0.1.19",
+    "compression": "^1.7.2",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.3",
+    "express-validation": "^1.0.2",
+    "helmet": "^3.12.1",
+    "html-webpack-plugin": "^3.2.0",
+    "joi": "^13.4.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongodb": "^3.0.10",
+    "mongoose": "^5.1.6",
+    "mongoose-unique-validator": "^2.0.1",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "slug": "^0.9.1",
+    "validator": "^10.3.0",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-equimper": "^2.2.2",
+    "nodemon": "^1.17.5",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-command": "^0.2.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
